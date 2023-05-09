@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _1.Domain.Fruits
 {
-    public class Apple : IFruit
+    public class Apple : Fruit
     { 
         public string Name { get; } = "Apple";
     }

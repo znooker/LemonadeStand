@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _1.Domain.Recipes
 {
-    internal interface IRecipe
+    public interface IRecipe
     {
         string Name { get; }
         Type AllowedFruit { get; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _1.Domain.Fruits
 {
-    internal interface IFruit
+    public interface IFruit
     {
         string Name { get; }
     }

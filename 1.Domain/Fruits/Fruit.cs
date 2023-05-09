@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _1.Domain.Fruits
 {
-    internal class Fruit : IFruit
+    public class Fruit : IFruit
     {
         public string Name { get; set; }
     }

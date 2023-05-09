@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _1.Domain.Fruits;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace _1.Domain.Recipes
 {
-    internal class Recipe : IRecipe
+    public class Recipe : IRecipe
     {
-        public Recipe(string name, FruitType fruit, decimal fruitConsumptionPerGlass, int pricePerGlass)
+        public Recipe(string name, IFruit fruit, decimal fruitConsumptionPerGlass, int pricePerGlass)
         {
             Name = name;
-            AllowedFruit = fruit;
+            AllowedFruit = fruit.GetType();
             ConsumptionPerGlass = fruitConsumptionPerGlass;
             PricePerGlass = pricePerGlass;
         }
